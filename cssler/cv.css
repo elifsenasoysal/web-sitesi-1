@@ -1,0 +1,66 @@
+.giris {
+    margin: 0;
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #8eabca;
+    border-radius: 45px;
+}
+
+.giris>h1,
+p,
+a,
+.iletisim {
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.iletisim {
+    background-color: rgba(240, 248, 255, 0.9);
+    border-radius: 45px;
+}
+
+.tum-okullar {
+    margin: 10px;
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #8eabca;
+    border-radius: 45px;
+}
+
+.tum-okullar h2 {
+    margin: 10px;
+    padding: 5px;
+}
+
+.okul {
+    background-color: rgba(240, 248, 255, 0.9);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 45px;
+}
+
+.talent {
+    margin: 10px;
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #8eabca;
+    border-radius: 45px;
+}
+
+.talent ul {
+    background-color: rgba(240, 248, 255, 0.9);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 45px;
+}
+
+.talent h2,
+li {
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+}
