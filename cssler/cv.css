@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 .giris {
     margin: 0;
     padding: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #8eabca;
     border-radius: 45px;
 }
@@ -15,6 +17,12 @@ a,
     padding: 5px;
 }
 
+.giris h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .iletisim {
     background-color: rgba(240, 248, 255, 0.9);
@@ -24,8 +32,8 @@ a,
 .tum-okullar {
     margin: 10px;
     padding: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #8eabca;
     border-radius: 45px;
 }
@@ -45,8 +53,8 @@ a,
 .talent {
     margin: 10px;
     padding: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #8eabca;
     border-radius: 45px;
 }
