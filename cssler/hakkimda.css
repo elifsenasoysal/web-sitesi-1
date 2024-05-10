@@ -49,9 +49,19 @@ body {
 
 @media screen and (max-width: 800px) {
 
-    .leftcolumn,
-    .rightcolumn {
+    .leftpart,
+    .rightpart {
         width: 100%;
         padding: 0;
+    }
+
+    .row img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
     }
 }

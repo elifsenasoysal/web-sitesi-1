@@ -19,37 +19,162 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <!-- carousel içeriği -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/igor-sporynin-E7l32SZ-E38-unsplash.jpg" class="d-block w-100" alt="kaleici">
+                <img src="images/igor-sporynin-E7l32SZ-E38-unsplash.jpg" class="d-block w-100" alt="kaleici"
+                    onclick="LimanDetayGit()">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Kaleiçi-Yat Limanı</h5>
+                    <p>Muratpaşa</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/atif-zafrak-Hs1tXq1g4kQ-unsplash.jpg" class="d-block w-100" alt="plaj">
+                <img src="images/atif-zafrak-Hs1tXq1g4kQ-unsplash.jpg" class="d-block w-100" alt="plaj"
+                    onclick="PlajDetayGit()">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Kaputaş Plajı</h5>
+                    <p>Kaş</p>
                 </div>
             </div>
+            <div class="carousel-item">
+                <img src="images/side.jpg" class="d-block w-100" alt="side" onclick="SideDetayGit()">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Side,Apollon Tapınağı</h5>
+                    <p>Manavgat</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/alanyakalesi.jpg" class="d-block w-100" alt="alanyakalesi" onclick="KaleDetayGit()">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Alanya Kalesi</h5>
+                    <p>Alanya</p>
+                </div>
+            </div>
+            <!-- ileri geri gitme butonları -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
+    <div class="info">
+        <div class="liman" id="liman-info">
+            <h3>Kaleiçi-Yat Limanı</h3>
+            <p1>Helenistik Dönem’de inşa edilen Kaleiçi Yat Limanı, yarım daire biçiminde doğal bir liman olma özelliği
+                taşıyor. Limanın girişi 110 metre genişliğinde. Dalgakıranların muhtemelen Helenistik Dönem’de yapılan
+                duvar
+                kalıntılarının üzerine inşa edildiği düşünülüyor. Geçmişte, liman girişinin her iki yanındaki birer burç
+                mevcut olup, bunlardan birinin deniz feneri olarak işlev gördüğü sanılıyor. 1472 yılında, Papalık
+                Donanması,
+                Papalık Armasını, dalgakıran burçları üzerine dikmiş ve şehrin güvenliğini sağlamak amacıyla, burçların
+                arasına gerilen zinciri, ganimet olarak dönüşte yanına almış.
+            </p1><br>
 
+            <p1>Günümüzde Kaleiçi Yat Limanı, kentin en önemli gezi duraklarından. Deniz trafiğinin daima yoğun olduğu
+                liman, yaklaşık 6-7 metre derinliğinde ve yüz adet tekne bağlama kapasitesine sahip.
+            </p1><br>
+        </div>
+        <div class="plaj" id="plaj-info">
+            <h3>Kaputaş Plajı</h3>
+            <p1>
+                Daha ilk anda görenleri etkileyen, güzelliğiyle Antalya’nın ve Türkiye’nin sayılı plajları arasında yer
+                alan
+                Kaputaş Plajı, Kaş’a, 20 km. Kalkan’a, 7 km. mesafede bulunuyor. Bir doğa harikası plaj, Kaş ile Kalkan
+                arasındaki sahil yolu üzerinde konumlanıyor. Çevresinde çok sayıda mağara olduğu için halk arasında
+                plaj,
+                Kanyon Ağzı Plajı olarak da biliniyor.
+            </p1><br>
+            <p1>Kendisiyle aynı adı taşıyan ve sarp kayalıklarla çevrili etkileyici bir koydaki plaja giriş ücretsiz.
+                Yol kenarından başlayan 187 basamaktan oluşan merdivenlerle ulaşılan plajın eşsiz güzelliğini görünce,
+                neden bu zahmetli inişe değdiğini anlıyorsunuz. </p1>
+        </div>
+        <div class="side" id="side-info">
+            <h3>Side Antik Kenti</h3>
+            <p1>Side Antik Kenti, Antalya’nın 80 km. doğusunda, Manavgat’ın 7 km. güneybatısında bulunan 350- 400 metre
+                genişliğindeki bir yarımada üzerinde kurulmuştur. Antik Dönem’de, Pamfilya’nın en önemli liman kenti
+                olan Side’nin, M.Ö. 7. yüzyılda, bir yerleşim yeri olduğu bilinmektedir. Tarih boyunca birçok medeniyete
+                ev sahipliği yapan, Yunanlılar, Lidyalılar, Persler, Romalılar, Selçuklular ve Osmanlılar Dönemi’ni
+                yaşayan kent, yüzyıllar boyunca ticaret ve liman kenti olarak stratejik bir önem taşımıştır.
+            </p1><br>
+            <p1>
+                5. yüzyılda, piskoposluk merkezi olan Side Antik Kenti, 5. ve 6. yüzyılda en parlak devrini yaşamıştır.
+                Ancak sonrasındaki Arap akınları ile zamanla gücünü yitirmiştir. İstilalar, haçlı seferleri sırasındaki
+                yağmalamalar ve doğal felaketler, kentin terk edilmesine neden olmuştur. 12. yüzyılda tümüyle boşaltılan
+                kent, 13. yüzyılda Selçukluların 14. yüzyılda Hamitoğulları Beyliği ve Tekelioğluları’nın egemenliği
+                altına girmiştir. Side de Selçuklular ve Osmanlılar yerleşim yapmadığından, bu dönemlere ait eserlere
+                rastlanmaz.
+            </p1>
+        </div>
+        <div class="alanyakalesi" id="kale-info">
+            <h3>Alanya Kalesi</h3>
+            <p1>Alanya ilçesinin en önemli sembollerinden biri sayılan Alanya Kalesi, içerisinde yer alan tarihi
+                eserlerle birlikte, denizden yaklaşık 250 metre yükseklikteki 10 hektarlık yarımada üzerine kurulu bir
+                açık hava müzesidir.
+            </p1><br>
+            <p1>Helenistik Dönem’de inşa edilen, günümüze kadar Helenistik, Roma, Bizans, Selçuklu ve Osmanlı
+                Medeniyetleri’ne ev sahipliği yapan kalenin dokusu, 13. yüzyıl Selçuklu Dönemi mimarisine dayanır.
+            </p1><br>
+            <p1>Bizanslılar Dönemi’nde ‘Güzel Dağ’ adıyla, gemiciler için önemli bir yer belirleme noktası sayılan ve
+                Akdeniz’in en işlek limanı olan Alanya Kalesi’nin, İçkale’deki kilise, Arap Evliyası, Cilvarda Burnu
+                üzerindeki manastır harabeleri ve Orta Hisar’dan İçkale’ye devam eden yuvarlak kuleli sur kalıntıları,
+                Bizans Dönemi’ne aittir. 1221 yılında kenti teslim alan ve adını Alaiye olarak değiştiren Anadolu
+                Selçuklu Sultanı I. Alaeddin Keykubad, kentte büyük bir imar faaliyetine başlayarak, eski surları
+                sağlamlaştırmış ve yenilerini yaptırmıştır. Bugünkü mevcut surlar, büyük sarnıçlar, Tersane, Kızılkule,
+                Tophane ve İçkale’deki saray kompleksi, 1. Alaeddin Keykubad’ın yaptırdığı eserlerden bazılarıdır.
+                Ehmedek, Akşebe Mescidi, Andızlı Camii, Selçuklu Hamamı, Aşağı Kale Hamamı da Selçuklu Dönemi’nde inşa
+                edilmiştir.</p1>
+        </div>
+    </div>
+    <script>
+        // resme tıklayınca sayfanın içindeki bilgi kısmına gidiyo 
+        function LimanDetayGit()
+        {
+            var limanInfoElement = document.getElementById("liman-info");
+            var limanInfoElementYukseklik = limanInfoElement.offsetTop;
+            window.scrollTo({
+                top: limanInfoElementYukseklik - 300,
+                behavior: "smooth" // Yumuşak kaydırma efekti ekliyo
+            });
+        }
+        function PlajDetayGit()
+        {
+            var plajInfoElement = document.getElementById("plaj-info");
+            var plajInfoElementYukseklik = plajInfoElement.offsetTop;
+            window.scrollTo({
+                top: plajInfoElementYukseklik - 300,
+                behavior: "smooth"
+            })
+        }
+        function SideDetayGit()
+        {
+            var sideInfoElement = document.getElementById("side-info");
+            var sideInfoElementYukseklik = sideInfoElement.offsetTop;
+            window.scrollTo({
+                top: sideInfoElementYukseklik - 250,
+                behavior: "smooth"
+            })
+        }
+        function KaleDetayGit()
+        {
+            var kaleInfoElement = document.getElementById("kale-info");
+            var kaleInfoElementYukseklik = kaleInfoElement.offsetTop;
+            window.scrollTo({
+                top: kaleInfoElementYukseklik - 250,
+                behavior: "smooth"
+            })
+        }
+    </script>
 </body>
 
 </html>

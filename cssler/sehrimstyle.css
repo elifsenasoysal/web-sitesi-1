@@ -1,24 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    margin-top: 20px;
-    width: 80%;
+    /* width: 80%; */
     margin-left: auto;
     margin-right: auto;
 }
 
 .carousel-item img {
-    /* köşeleri yuvarlatma işlemi */
-    border-radius: 20px;
+    width: 100%;
 }
 
-.carousel-caption h5 {
+.carousel-caption h5,
+p {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #ffffff;
+    font-size: 300%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption p {
     color: aliceblue;
+}
+
+.info h3 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.info p1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+.info .liman {
+    margin: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.info .plaj {
+    margin: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.info .side {
+    margin: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.info .alanyakalesi {
+    margin: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
