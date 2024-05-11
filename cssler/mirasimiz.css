@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {}
+
+.header {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    font-family: "Lobster", sans-serif;
+}
+
+.header h2 {
+}
