@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="cssler/form.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="gonder.php" method="POST"></form>
+        <h1>İletişim Formu</h1>
+
+        <label for="ad">Adınız:</label><br>
+        <input type="text" id="ad" name="ad"><br>
+
+        <label for="soyad">Soyadınız:</label><br>
+        <input type="text" id="soyad" name="soyad"><br>
+
+        <label for="mail">E-Posta Adresiniz:</label><br>
+        <input type="email" id="mail" name="eposta"><br>
+
+        <label for="feedback">Geri Bildirim Türü:</label><br>
+        <select name="feedback" id="feedback">
+            <option value="" disabled selected>Lütfen Seçiniz..</option>
+            <option value="sikayet">Şikayet</option>
+            <option value="oneri">Öneri</option>
+            <option value="istek">İstek</option>
+            <option value="teşekkkür">Teşekkür</option>
+            <option value="diger">Diğer</option>
+        </select><br>
+
+        <label for="konu">Konu:</label><br>
+        <input type="text" id="konu" name="konu"><br>
+
+        <label for="mesaj">Mesajınız:</label><br>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea><br>
+
+        <button type="submit" class="gonder-btn">Gönder</button>
+        <button type="reset" class="reset-btn">Temizle</button>
+
+    </div>
+</body>
+
+</html>
