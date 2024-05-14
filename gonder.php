@@ -33,3 +33,5 @@
         }
      }
 ?>
+
+<!-- bu işlev javascript ile yapmalısın  -->
