@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cssler/login.css">
     <title>Giriş</title>
+    <script src="login.js" defer></script>
 </head>
 
 <body>
     <div class="conteiner">
         <div class="box form-box">
             <header>Giriş Yap</header>
-            <form action="" method="post">
+            <form action="welcome.php" method="post">
                 <div class="field input">
                     <label for="username">Kullanıcı Adı</label><br>
-                    <input type="email" name="username" id="username" required>
+                    <input type="email" name="username" id="username">
                 </div>
 
                 <div class="field input">
                     <label for="password">Şifre</label><br>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password">
                 </div>
 
                 <div class="field">
-                    <input type="submit" class="btn" name="submit" value="Giriş" required>
+                    <input type="submit" class="btn" name="submit" value="Giriş">
                 </div>
             </form>
         </div>

@@ -6,17 +6,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $feedback = htmlspecialchars($_POST['feedback']);
     $konu = htmlspecialchars($_POST['konu']);
     $mesaj = htmlspecialchars($_POST['mesaj']);
-    ?>
-    <!DOCTYPE html>
-    <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form Başarılı</title>
-        <link rel="stylesheet" href="cssler/form.css">
-    </head>
-    <body>
+}
+?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Başarılı</title>
+</head>
+<body>
+    <div class="container">
         <h1>Formunuz başarıyla oluşturulmuştur</h1>
         <p><strong>Adınız:</strong> <?php echo $ad; ?></p>
         <p><strong>Soyadınız:</strong> <?php echo $soyad; ?></p>
@@ -24,11 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p><strong>Geri Bildirim Türü:</strong> <?php echo $feedback; ?></p>
         <p><strong>Konu:</strong> <?php echo $konu; ?></p>
         <p><strong>Mesajınız:</strong> <?php echo nl2br($mesaj); ?></p>
-    </body>
-    </html>
-    <?php
-} else {
-    header("Location: index.html");
-    exit();
-}
-?>
+    </div>
+</body>
+</html>

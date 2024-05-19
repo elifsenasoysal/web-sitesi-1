@@ -1,66 +1,40 @@
-document.addEventListener("DOMContentLoaded", () =>
+document.addEventListener('DOMContentLoaded', (event) =>
 {
-    const form = document.getElementById("iletisimFormu");
+    const form = document.getElementById('form');
 
-    form.addEventListener("submit", function (event)
+
+    form.addEventListener('submit', function (event)
     {
-        let isValid = true;
-        let errorMessage = "";
+        const ad = document.getElementById('ad').value.trim();
+        const soyad = document.getElementById('soyad').value.trim();
+        const mail = document.getElementById('mail').value.trim();
+        const feedback = document.getElementById('feedback').value;
+        const konu = document.getElementById('konu').value.trim();
+        const mesaj = document.getElementById('mesaj').value.trim();
 
-        const ad = document.getElementById("ad").value.trim();
-        const soyad = document.getElementById("soyad").value.trim();
-        const mail = document.getElementById("mail").value.trim();
-        const feedback = document.getElementById("feedback").value;
-        const konu = document.getElementById("konu").value.trim();
-        const mesaj = document.getElementById("mesaj").value.trim();
-
-        if (!ad)
+        if (ad === "")
         {
-            isValid = false;
-            errorMessage += "Adınızı giriniz.\n";
-        }
-
-        if (!soyad)
+            alert("Adınızı giriniz.");
+            event.preventDefault(); // Formun gönderilmesini engeller
+        } else if (soyad === "")
         {
-            isValid = false;
-            errorMessage += "Soyadınızı giriniz.\n";
-        }
-
-        if (!mail)
+            alert("Soyadınızı giriniz.");
+            event.preventDefault();
+        } else if (mail === "")
         {
-            isValid = false;
-            errorMessage += "E-posta adresinizi giriniz.\n";
-        } else
+            alert("E-posta adresinizi giriniz.");
+            event.preventDefault();
+        } else if (feedback === "")
         {
-            const mailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!mailPattern.test(mail))
-            {
-                isValid = false;
-                errorMessage += "Geçerli bir e-posta adresi giriniz.\n";
-            }
-        }
-
-        if (!feedback)
+            alert("Geri bildirim türünü seçiniz.");
+            event.preventDefault();
+        } else if (konu === "")
         {
-            isValid = false;
-            errorMessage += "Geri bildirim türünü seçiniz.\n";
-        }
-
-        if (!konu)
+            alert("Konuyu giriniz.");
+            event.preventDefault();
+        } else if (mesaj === "")
         {
-            isValid = false;
-            errorMessage += "Konuyu giriniz.\n";
-        }
-
-        if (!mesaj)
-        {
-            isValid = false;
-            errorMessage += "Mesajınızı giriniz.\n";
-        }
-
-        if (!isValid)
-        {
-            alert(errorMessage);
+            alert("Mesajınızı giriniz.");
             event.preventDefault();
         }
     });
